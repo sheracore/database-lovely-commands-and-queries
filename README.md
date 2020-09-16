@@ -17,5 +17,6 @@ ADD CONSTRAINT constraint_name UNIQUE (column1, column2, ... column_n);
 ```
 #### And for droping constraint using this
 ```
-DROP CONSTRAINT order_unique;
+ALTER TABLE table_name
+DROP CONSTRAINT constraint_name;
 ```
