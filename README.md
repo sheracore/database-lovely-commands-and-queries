@@ -20,3 +20,7 @@ ADD CONSTRAINT constraint_name UNIQUE (column1, column2, ... column_n);
 ALTER TABLE table_name
 DROP CONSTRAINT constraint_name;
 ```
+#### To get max two column together you can use this function type
+```
+select max(date_tiem, formula_cal) from table;
+```
