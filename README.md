@@ -1,3 +1,4 @@
+## Postgres
 ### What is constraint: It's combination of columns that all of them together  should be uniq.
 #### When creating table
 ```
@@ -23,4 +24,19 @@ DROP CONSTRAINT constraint_name;
 #### To get max two column together you can use this function type
 ```
 select max(date_tiem, formula_cal) from table;
+```
+#### How to dump from table into the local by csv format and reverse from local to date base
+##### From table to local in csv format
+```
+COPY(select region,province, city,device_name,resource_name,type,port_level, capacity, subtype, link_name from mtn_transmission_mapping where deleted = false) to '/tmp/mapping_2020_10_04.csv' with  csv;
+```
+##### From csv file to table 
+```
+COPY(region,province, city,device_name,resource_name,type,port_level, capacity, subtype, link_name) from '/tmp/mapping_2020_10_04.csv' with  csv;
+```
+
+## Clickhouse
+#### How to copy data from csv file to the clickhouse table
+```
+clickhouse-client --format_csv_delimiter="," --query="INSERT INTO rpat.mtn_transmission_mapping (region, province, city,device_name,resource_name,type,port_level, capacity, subtype,link_name) FORMAT CSV" < /tmp/mapping_2020_10_04.csv
 ```
