@@ -1,4 +1,4 @@
-## Postgres
+## Postgresql
 ### What is constraint: It's combination of columns that all of them together  should be uniq.
 #### When creating table
 ```
