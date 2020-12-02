@@ -40,3 +40,8 @@ COPY(region,province, city,device_name,resource_name,type,port_level, capacity, 
 ```
 clickhouse-client --format_csv_delimiter="," --query="INSERT INTO rpat.mtn_transmission_mapping (region, province, city,device_name,resource_name,type,port_level, capacity, subtype,link_name) FORMAT CSV" < /tmp/mapping_2020_10_04.csv
 ```
+## Mysql
+### export table csv format: 
+```
+mysql -h 192.168.*.* -u root -p  -e 'select * from rpat.mtn_2g_targets_2020_quarter4_health_index' > mtn_2g_targets_2020_quarter4_health_index.csv
+```
