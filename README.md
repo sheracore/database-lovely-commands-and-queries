@@ -11,6 +11,7 @@ CREATE TABLE order_details
   CONSTRAINT order_date_unique UNIQUE (order_id, order_date)
 );
 ```
+### Constraint
 #### After creating table
 ```
 ALTER TABLE table_name
