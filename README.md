@@ -35,6 +35,12 @@ COPY(select region,province, city,device_name,resource_name,type,port_level, cap
 ```
 COPY(region,province, city,device_name,resource_name,type,port_level, capacity, subtype, link_name) from '/tmp/mapping_2020_10_04.csv' with  csv;
 ```
+### Analyze
+#### We can use tow type of analyze 
+```
+expalin select ...
+explain analyze select ....
+```
 
 ## Clickhouse
 #### How to copy data from csv file to the clickhouse table
