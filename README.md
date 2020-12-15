@@ -41,6 +41,11 @@ COPY(region,province, city,device_name,resource_name,type,port_level, capacity, 
 expalin select ...
 explain analyze select ....
 ```
+## Foreign table
+### Creating foreign table from another server that is conneted
+```
+create foreign table mtn_huawei_lte_cell_hrly_r7r8 () inherits(mtn_huawei_lte_cell_hrly) server master_server;
+```
 
 ## Clickhouse
 #### How to copy data from csv file to the clickhouse table
