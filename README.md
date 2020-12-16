@@ -1,6 +1,14 @@
 ## Postgresql
 ### What is constraint: It's combination of columns that all of them together  should be uniq.
-#### When creating table
+
+#### This commands contain creating database and user and grant for all users
+```
+create database database_name
+create user username with password 'password'
+GRANT CONNECT ON DATABASE database_name TO username;
+GRANT ALL PRIVILEGES ON DATABASE database_name TO username;
+```
+#### Creating table
 ```
 CREATE TABLE order_details
 ( order_detail_id integer CONSTRAINT order_details_pk PRIMARY KEY,
