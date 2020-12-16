@@ -7,6 +7,7 @@ create database database_name
 create user username with password 'password'
 GRANT CONNECT ON DATABASE database_name TO username;
 GRANT ALL PRIVILEGES ON DATABASE database_name TO username;
+ALTER USER username CREATEDB;
 ```
 #### Creating table
 ```
