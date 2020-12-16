@@ -1,4 +1,4 @@
-## Postgresql
+# Postgresql
 ### What is constraint: It's combination of columns that all of them together  should be uniq.
 
 #### This commands contain creating database and user and grant for all users
@@ -55,12 +55,12 @@ explain analyze select ....
 create foreign table mtn_huawei_lte_cell_hrly_r7r8 () inherits(mtn_huawei_lte_cell_hrly) server master_server;
 ```
 
-## Clickhouse
+# Clickhouse
 #### How to copy data from csv file to the clickhouse table
 ```
 clickhouse-client --format_csv_delimiter="," --query="INSERT INTO rpat.mtn_transmission_mapping (region, province, city,device_name,resource_name,type,port_level, capacity, subtype,link_name) FORMAT CSV" < /tmp/mapping_2020_10_04.csv
 ```
-## Mysql
+# Mysql
 ### Export table csv format: 
 ```
 mysql -h 192.168.*.* -u root -p  -e 'select * from rpat.mtn_2g_targets_2020_quarter4_health_index' > mtn_2g_targets_2020_quarter4_health_index.csv
