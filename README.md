@@ -55,6 +55,11 @@ explain analyze select ....
 ```
 create foreign table mtn_huawei_lte_cell_hrly_r7r8 () inherits(mtn_huawei_lte_cell_hrly) server master_server;
 ```
+### Converting date to char
+```
+to_char(collection_date::Date, 'YYYY')
+to_char(collection_date::Date, 'YYYY/mm/dd')
+```
 
 # Clickhouse
 #### How to copy data from csv file to the clickhouse table
