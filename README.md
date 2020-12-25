@@ -1,6 +1,5 @@
 # Postgresql
-### What is constraint: It's combination of columns that all of them together  should be uniq.
-
+### What is constraint: It's combination of columns that all of them together  should be unique.
 #### This commands contain creating database and user and grant for all users
 ```
 create database database_name
