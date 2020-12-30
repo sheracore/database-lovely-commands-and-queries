@@ -1,3 +1,15 @@
+# DBMS
+
+DBMS Language
+
+To communicate database updates and queries, DBMS language is used. Different types of database languages are explained below:
+* Data Definition Language (DDL): It is used to save information regarding tables schemas, indexes, columns, constraints, etc.
+* Data Manipulation Language (DML): It is used for accessing and manipulating databases.
+* Data Control Language (DCL): It is used to access the saved data. It also allows to give or revoke access from a user.
+* Transaction Control Language (TCL): It is used to run or process the modifications made by the DML.
+
+
+
 # Postgresql
 ### What is constraint: It's combination of columns that all of them together  should be unique.
 #### This commands contain creating database and user and grant for all users
