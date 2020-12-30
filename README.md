@@ -105,7 +105,7 @@ CREATE TABLE merge.hits_buffer AS merge.hits ENGINE = Buffer(merge, hits, 16, 10
 Creating a merge.hits_buffer table with the same structure as merge.hits and using the Buffer engine. When writing to this table, data is buffered in RAM and later written to the ‘merge.hits’ table. 16 buffers are created. The data in each of them is flushed if either 100 seconds have passed, or one million rows have been written, or 100 MB of data have been written; or if simultaneously 10 seconds have passed and 10,000 rows and 10 MB of data have been written. For example, if just one row has been written, after 100 seconds it will be flushed, no matter what. But if many rows have been written, the data will be flushed sooner.
 When the server is stopped, with DROP TABLE or DETACH TABLE, buffer data is also flushed to the destination table.
 ```diff
-+ When reading from a Buffer table, data is processed both from the buffer and from the destination table (if there is one).
++ When ```diff - reading1``` from a Buffer table, data is processed both from the buffer and from the destination table (if there is one).
 ```
 # Mysql
 ### Export table csv format: 
