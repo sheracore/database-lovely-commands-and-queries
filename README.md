@@ -71,6 +71,10 @@ create foreign table mtn_huawei_lte_cell_hrly_r7r8 () inherits(mtn_huawei_lte_ce
 to_char(collection_date::Date, 'YYYY')
 to_char(collection_date::Date, 'YYYY/mm/dd')
 ```
+### How to dump table by pg_dump
+```
+sudo -u postgres pg_dump -d rpat -t mtn_dump_mapping > mtn_dump_mapping.sql
+```
 
 # Clickhouse
 #### How to copy data from csv file to the clickhouse table
