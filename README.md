@@ -80,6 +80,15 @@ sudo -u postgres pg_dump -d rpat -t mtn_dump_mapping > mtn_dump_mapping.sql
 SELECT table_name FROM information_schema.tables WHERE table_schema = 'public';
 ```
 
+### NULLIF(value1, value2)
+#### The NULLIF function returns a null value if value1 equals value2; otherwise it returns value1. This can be used to perform the inverse operation of the COALESCE example given above:
+```
+SELECT NULLIF(value, '(none)') ...
+```
+#### In this example, if value is (none), null is returned, otherwise the value of value is returned.
+#### This type of null is useful in executemany in python
+
+
 # Clickhouse
 #### How to copy data from csv file to the clickhouse table
 ```
