@@ -11,6 +11,26 @@ To communicate database updates and queries, DBMS language is used. Different ty
 
 
 # Postgresql
+
+## Install on cencos 7
+```
+yum update
+```
+#### To update postgres repo on yum repository
+```
+sudo yum install https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+```
+#### To initdb use this(pay attention to the version)
+```
+sudo /usr/pgsql-10/bin/postgresql-10-setup initdb
+```
+#### So start servic by systemctl
+```
+sudo systemctl start postgresql-11
+sudo systemctl enable postgresql-11
+```
+
+
 ### What is constraint: It's combination of columns that all of them together  should be unique.
 #### This commands contain creating database and user and grant for all users
 ```
