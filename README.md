@@ -26,8 +26,8 @@ sudo /usr/pgsql-10/bin/postgresql-10-setup initdb
 ```
 #### So start servic by systemctl
 ```
-sudo systemctl start postgresql-11
-sudo systemctl enable postgresql-11
+sudo systemctl start postgresql-10
+sudo systemctl enable postgresql-10
 ```
 
 
