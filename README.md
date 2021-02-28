@@ -12,6 +12,24 @@ To communicate database updates and queries, DBMS language is used. Different ty
 
 # Postgresql
 
+## Function in postgresql
+```
+CREATE FUNCTION dup(int) RETURNS TABLE(f1 int, f2 text)
+    AS $$ SELECT $1, CAST($1 AS text) || ' is text' $$
+    LANGUAGE SQL;
+
+SELECT * FROM dup(42);
+```
+
+## Loop in postgresql
+```
+do $$
+begin 
+  for counter in 1..6 by 2 loop
+    raise notice 'counter: %', counter;
+  end loop;
+end; $$
+```
 ## Install on cencos 7
 ```
 yum update
