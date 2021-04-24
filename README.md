@@ -27,7 +27,7 @@ To communicate database updates and queries, DBMS language is used. Different ty
 
 ## 3NF(3rd Normal Form)
 * All fiedls(columns) can be determined only by the key in the table and no other columns
-(Means that if to or three columns has 1 to 1 relationship we can seperate its to another table)
+(Means that if two or three columns has 1 to 1 relationship we can seperate its to another table)
 
 ![DB3](DB3.png)
 
