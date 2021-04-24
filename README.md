@@ -8,7 +8,7 @@ To communicate database updates and queries, DBMS language is used. Different ty
 * Data Control Language (DCL): It is used to access the saved data. It also allows to give or revoke access from a user.
 * Transaction Control Language (TCL): It is used to run or process the modifications made by the DML.
 
-
+# Normalization(1NF, 2NF, 3NF and 4NF)
 
 # Postgresql
 
