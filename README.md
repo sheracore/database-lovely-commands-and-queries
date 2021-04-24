@@ -21,21 +21,21 @@ To communicate database updates and queries, DBMS language is used. Different ty
 * All attributes(Non-key columns) dependent an the key
 (Means than of columns to depended to key columns we should seperate its to another table)
 
-![DB2](pics/DB2.png)
-![DB2_2](pics/DB2_2.png)
+![DB2](DB2.png)
+![DB2_2](DB2_2.png)
 
 
 ## 3NF(3rd Normal Form)
 * All fiedls(columns) can be determined only by the key in the table and no other columns
 (Means that if to or three columns has 1 to 1 relationship we can seperate its to another table)
 
-![DB3](pics/DB3.png)
+![DB3](DB3.png)
 
 ## 4NF(4rd Normal Form)
 * No multi-valued dependencies
 
-![DB4](pics/DB4.png)
-![DBFinal](pics/DBFinal.png)
+![DB4](DB4.png)
+![DBFinal](DBFinal.png)
 
 # Postgresql
 
