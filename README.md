@@ -15,7 +15,7 @@ To communicate database updates and queries, DBMS language is used. Different ty
 * Rows uniquely identified - Add unique ID, or add more columns to be unique.
 * (Note: the order of the rows and the order of the columns are irrelevant)
 
-![DB1](pics/DB1.png)
+![DB1](DB1.png)
 
 ## 2NF(2rd Normal Form)
 * All attributes(Non-key columns) dependent an the key
