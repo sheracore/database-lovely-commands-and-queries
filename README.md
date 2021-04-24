@@ -9,17 +9,33 @@ To communicate database updates and queries, DBMS language is used. Different ty
 * Transaction Control Language (TCL): It is used to run or process the modifications made by the DML.
 
 # Normalization(1NF, 2NF, 3NF and 4NF):
-## 1NF
+## 1NF(1rd Normal Form)
 * Each cell to be single valued
 * Entries in a column are same type
 * Rows uniquely identified - Add unique ID, or add more columns to be unique.
 * (Note: the order of the rows and the order of the columns are irrelevant)
-## 2NF
+
+![DB1](pics/DB1.png)
+
+## 2NF(2rd Normal Form)
 * All attributes(Non-key columns) dependent an the key
 (Means than of columns to depended to key columns we should seperate its to another table)
-## 3NF
+
+![DB2](pics/DB2.png)
+![DB2_2](pics/DB2_2.png)
+
+
+## 3NF(3rd Normal Form)
 * All fiedls(columns) can be determined only by the key in the table and no other columns
 (Means that if to or three columns has 1 to 1 relationship we can seperate its to another table)
+
+![DB3](pics/DB3.png)
+
+## 4NF(4rd Normal Form)
+* No multi-valued dependencies
+
+![DB4](pics/DB4.png)
+![DBFinal](pics/DBFinal.png)
 
 # Postgresql
 
