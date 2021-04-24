@@ -8,7 +8,12 @@ To communicate database updates and queries, DBMS language is used. Different ty
 * Data Control Language (DCL): It is used to access the saved data. It also allows to give or revoke access from a user.
 * Transaction Control Language (TCL): It is used to run or process the modifications made by the DML.
 
-# Normalization(1NF, 2NF, 3NF and 4NF)
+# Normalization(1NF, 2NF, 3NF and 4NF):
+## 1NF
+* Each cell to be single valued
+* Entries in a column are same type
+* Rows uniquely identified - Add unique ID, or add more columns to be unique.
+* (Note: the order of the rows and the order of the columns are irrelevant)
 
 # Postgresql
 
