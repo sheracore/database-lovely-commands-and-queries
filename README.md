@@ -194,3 +194,23 @@ When the server is stopped, with DROP TABLE or DETACH TABLE, buffer data is also
 ```
 mysql -h 192.168.*.* -u root -p  -e 'select * from rpat.mtn_2g_targets_2020_quarter4_health_index' > mtn_2g_targets_2020_quarter4_health_index.csv
 ```
+
+# MongoDB
+### Install
+```
+   1-  sudo apt-get purge mongodb-org*
+
+   2- sudo rm -r /var/log/mongodb
+   3- sudo rm -r /var/lib/mongodb
+
+Then start installing with the following commands:
+
+   4- sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
+
+   5- echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
+
+   6- sudo apt-get update
+
+   7- sudo apt-get install -y mongodb-org
+
+```
