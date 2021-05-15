@@ -214,3 +214,22 @@ Then start installing with the following commands:
    7- sudo apt-get install -y mongodb-org
 
 ```
+
+# Redis
+#### Queries
+```
+Go to db:
+>> select 4
+Show keys:
+>> keys *
+Set:
+>> set name "mohamad"
+Get:
+>> get name
+Cunt of keys:
+>> dbsize
+Info:
+>> nfo keyspace
+Check redis version:
+>> info
+```
