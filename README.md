@@ -192,7 +192,7 @@ When the server is stopped, with DROP TABLE or DETACH TABLE, buffer data is also
 # Mysql
 ### Export table csv format: 
 ```
-mysql -h 192.168.*.* -u root -p  -e 'select * from rpat.mtn_2g_targets_2020_quarter4_health_index' > mtn_2g_targets_2020_quarter4_health_index.csv
+mysql -h 192.168.*.* -u root --delimiter=","  -p  -e 'select * from rpat.mtn_2g_targets_2020_quarter4_health_index' > mtn_2g_targets_2020_quarter4_health_index.csv
 ```
 
 # MongoDB
