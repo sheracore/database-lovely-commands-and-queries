@@ -57,7 +57,7 @@ begin
   end loop;
 end; $$
 ```
-## Install on cencos 7
+## Install postgres on cencos 7
 ```
 yum update
 ```
