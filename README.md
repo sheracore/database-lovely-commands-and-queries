@@ -189,6 +189,37 @@ When the server is stopped, with DROP TABLE or DETACH TABLE, buffer data is also
 ```diff
 + When reading from a Buffer table, data is processed both from the buffer and from the destination table (if there is one).
 ```
+### if
+```
+SELECT if(cond, then, else)
+```
+
+### endWith && startWith
+```
+endsWith(s, suffix) 
+Returns whether to end with the specified suffix. Returns 1 if the string ends with the specified suffix, otherwise it returns 0.
+
+startsWith(str, prefix) 
+Returns 1 whether string starts with the specified prefix, otherwise it returns 0.
+
+SELECT startsWith('Spider-Man', 'Spi');
+```
+
+### case
+‍‍‍```
+:) SELECT 
+:-]  number,
+:-]  CASE number
+:-]   WHEN 0 THEN number+1
+:-]   WHEN 1 THEN number*10
+:-]   ELSE number
+:-]  END
+:-]  FROM system.numbers
+:-]  WHERE number < 10
+:-]  LIMIT 10;
+
+‍‍‍```
+
 # Mysql
 ### Export table csv format: 
 ```
