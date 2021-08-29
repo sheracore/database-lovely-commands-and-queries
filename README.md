@@ -38,6 +38,14 @@ To communicate database updates and queries, DBMS language is used. Different ty
 ![DBFinal](DBFinal.png)
 
 # Postgresql
+## Drop all tables together
+```
+DROP SCHEMA public CASCADE;
+CREATE SCHEMA public;
+
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO public;
+```
 
 ## Function in postgresql
 ```
