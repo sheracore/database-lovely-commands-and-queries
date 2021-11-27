@@ -258,6 +258,7 @@ Then start installing with the following commands:
 # Redis
 #### Queries
 ```
+redis-cli
 Go to db:
 >> select 4
 Show keys:
