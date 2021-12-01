@@ -229,6 +229,11 @@ SELECT startsWith('Spider-Man', 'Spi');
 
 ‍‍‍```
 
+### Clickhouse connect to clickhouse with user and pass
+```
+clickhouse-clien -u root --password ***
+```
+
 # Mysql
 ### Export table csv format: 
 ```
