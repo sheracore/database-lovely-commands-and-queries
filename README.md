@@ -38,6 +38,32 @@ To communicate database updates and queries, DBMS language is used. Different ty
 ![DBFinal](DBFinal.png)
 
 # Postgresql
+## Create duplicate rows query
+```
+select * from `User_Table` where id not in(
+select id from 
+(select id, max(registration_date) as registration_date, productkey from `User_Table`
+where 
+productkey in 
+(select productkey 
+ from
+ (SELECT count(productkey) as repeat_productkey, productkey FROM `User_Table` where os = '' group by productkey having count(productkey)>=2) as s
+)group by productkey) as t6)
+
+AND
+
+productkey in (
+select productkey from 
+(select id, max(registration_date) as registration_date, productkey from `User_Table`
+where 
+productkey in 
+(select productkey 
+ from
+ (SELECT count(productkey) as repeat_productkey, productkey FROM `User_Table` where os = '' group by productkey having count(productkey)>=2) as s
+)group by productkey) as t6
+)
+```
+
 ## Drop all tables together
 ```
 DROP SCHEMA public CASCADE;
