@@ -150,6 +150,9 @@ select max(date_tiem, formula_cal) from table;
 ##### From table to local in csv format
 ```
 COPY(select region,province, city,device_name,resource_name,type,port_level, capacity, subtype, link_name from mtn_transmission_mapping where deleted = false) to '/tmp/mapping_2020_10_04.csv' with  csv;
+
+pg_dump --data-only -d 'moniaz' -U 'moniazuser' < ~/Downloads/moniaz_d.dump
+
 ```
 ##### From csv file to table 
 ```
