@@ -178,6 +178,10 @@ to_char(collection_date::Date, 'YYYY/mm/dd')
 ```
 sudo -u postgres pg_dump -d rpat -t mtn_dump_mapping > mtn_dump_mapping.sql
 ```
+### How to push dump data to database
+```
+sudo pg_restore --host "localhost" --port "5432" --username "moniazuser" -W --dbname "moniaz" --verbose "/home/ubuntu/moniaz/moniaznew.dump"
+```
 ### How to get all table names 
 ```
 SELECT table_name FROM information_schema.tables WHERE table_schema = 'public';
